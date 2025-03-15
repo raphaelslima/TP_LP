@@ -35,7 +35,9 @@ void calculosMatriz(int tamanho, int qtdThradsAtual){
    double inicio = omp_get_wtime(); 
 
     // inicia a programacao em paralelo
-    #pragma omp parallel for num_threads(qtdThradsAtual)
+    omp_set_num_threads(qtdThradsAtual);
+
+    #pragma omp parallel
 {
     // retorna o número da thread
     int nThread = omp_get_thread_num(); 
