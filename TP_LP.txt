@@ -1,0 +1,28 @@
+
+
+Definições:
+
+- Apresentem o relatório com gráficos e tabelas;
+- Escrevam no relatório a percepção de vocês em implementar os códigos;
+
+- Vocês devem implementar uma versão sequencial - sem paralelismo - e uma paralela em OpenMP - ambas utilizando somente aritmética de ponteiros - de:
+  - Filtro de suavização -> cada elemento será substituído pela média dos seus vizinhos diretos;
+
+- Não há necessidade de usar uma imagem real, simulem uma imagem criando matrizes aleatórias onde cada posição da matriz é um número entre 0 e 255;
+
+- Vocês devem medir os tempos de execução de cada cenário e criar um relatório com as comparações dos tempos de execução com omp_get_wtime();
+- Tamanhos das matrizes: 1000 x 1000, 5000 x 5000 e 10000 x 10000;
+
+TAREFAS:
+- Quantidade de Threads: 
+1 (versão sequencial) (Maurício)
+2 
+4
+8
+
+
+  - Há benefício em usar o OpenMP?
+  - Há vantagem em utilizar a aritmética de ponteiros em relação as implementações comuns?
+  - A legibilidade é ruim?
+  - Há facilidade de escrita? Em qual dos temas? (aritmética de ponteiros e OpenMP)
+- Analisem o porquê da diferença dos tempos de execução.
